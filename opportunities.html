@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opportunities</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Volunteer Connect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link home" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link events" href="/events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link opportunities" href="/opportunities.html">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact" href="/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-target="#navbar" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/policy.html">Privacy Policy</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/tos.html">Terms of Service</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="container mb-5">
+    <h1 class="text-center my-5">Opportunities</h1>
+    <div id="opportunitiesContainer"></div>
+    <div class="modal signUpModal" id="signUpModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="border-bottom text-center pb-3" id="modalDescription"></p>
+                    <p class="text-center mb-0" id="modalDate"></p>
+                </div>
+
+                <form id="signUpForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" required>
+                        <div id="nameHelp" class="form-text">We'll never share your info with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="preferredRole" class="form-label">Preferred Role</label>
+                        <input type="text" class="form-control" id="preferredRole" required>
+                    </div>
+                    <p id="confirmationMessage"></p>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="js/main.js" defer></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
