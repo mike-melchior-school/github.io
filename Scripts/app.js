@@ -501,7 +501,7 @@
             const password = document.getElementById("password").value.trim();
 
             try {
-                const response = await fetch('../data/users.json');
+                const response = await fetch('./data/users.json');
 
                 if (!response.ok) {
                     throw new Error(`[ERROR] HTTP error: Status: ${response.status}`);
