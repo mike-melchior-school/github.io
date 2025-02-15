@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "DisplayName": "bobsmith",
+      "EmailAddress": "bob.smith@gmail.com",
+      "Username" : "bobsmitty",
+      "Password" : "bob123"
+    },
+    {
+      "DisplayName": "george s",
+      "EmailAddress": "george555@gmail.com",
+      "Username" : "george555",
+      "Password" : "password1"
+    },
+    {
+      "DisplayName": "matt sheck",
+      "EmailAddress": "matt1234@hotmail.com",
+      "Username" : "mattyS",
+      "Password" : "bada$$matt"
+    },
+    {
+      "DisplayName" : "admin",
+      "EmailAddress" : "admin@gmail.com",
+      "Username" : "admin",
+      "Password": "password"
+    }
+  ]
+}

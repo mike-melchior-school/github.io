@@ -6,78 +6,62 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Content/app.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 <body>
+<header></header>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Volunteer Connect</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link home" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link events" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link opportunities" href="opportunities.html">Opportunities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link about" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contact" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-target="#navbar" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="policy.html">Privacy Policy</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="tos.html">Terms of Service</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<main class="container mb-5">
-    <h1 class="text-center my-5">Contact Us</h1>
+<main class="container">
+    <h1>Contact Us</h1>
 
-    <form id="contactForm">
-        <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" required>
-            <div id="nameHelp" class="form-text">We'll never share your info with anyone else.</div>
+    <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+        <div class="input-group-text mb-3">
+            <label for="fullName" class="input-group-text">Full Name</label>
+            <input id="fullName" name="fullName" type="text" class="form-control"
+                   aria-describedby="fullName-error" required>
+            <span id="fullName-error" class="text-danger"></span>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea type="text" class="form-control" id="message" required></textarea>
-        </div>
-        <p id="confirmationMessage"></p>
+        <div class="input-group-text mb-3">
+            <label for="contactNumber" class="input-group-text">Contact Number</label>
+            <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
+                   aria-describedby="contactNumber-error" required>
+            <span id="contactNumber-error" class="text-danger"></span>
 
-        <div class="modal-footer text-center justify-content-center">
-            <button type="button" class="btn btn-secondary mx-2" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
+        <div class="input-group-text mb-3">
+            <label for="emailAddress" class="input-group-text">Email</label>
+            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                   aria-describedby="email-error" required>
+            <span id="emailAddress-error" class="text-danger"></span>
+
+        </div>
+        <div class="input-group-text mb-3">
+            <span class="input-group-text">Message</span>
+            <textarea id="message" name="message" type="text" class="form-control"
+                      aria-describedby="Message" aria-label="Message"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input id="subscribeCheckbox" type="checkbox" class="form-check-input" >
+            <label class="form-check-label" for="subscribeCheckbox">Subscribe to out Contact List</label>
+        </div>
+
+
+        <button id="sendButton" name="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Submit</button>
+        <button id="cancelButton" name="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i> Cancel</button>
     </form>
+
+    <div class="col-lg-6 col-md-4">
+        <a href="contact-list.html" class="btn btn-outline-primary"><i class="fa-solid fa-users"></i> Show Contact List</a>
+    </div>
+
 </main>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="js/main.js" defer></script>
+
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="Scripts/namespace.js"></script>
+<script src="Scripts/contact.js"></script>
+<script src="Scripts/app.js" defer></script>
 </body>
 </html>

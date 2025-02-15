@@ -6,99 +6,24 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Content/app.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Volunteer Connect</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link home" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link events" href="events.html">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link opportunities" href="opportunities.html">Opportunities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link about" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link contact" href="contact.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-target="#navbar" aria-expanded="false">
-                                More
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="policy.html">Privacy Policy</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="tos.html">Terms of Service</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <header></header>
 
-    <main class="container mb-5">
-        <h1 class="text-center mt-5 fs-1">Welcome to Volunteer Connect!</h1>
-        <p class="text-center mt-5 fs-3">Discover opportunities to make a difference in your community!
-            Volunteer Connect is your one-stop portal for finding meaningful ways to contribute,
-            register as a volunteer, and stay informed about exciting upcoming events.
-        </p>
-        <p class="text-center fs-3">
-            Together, we can create positive change through collaboration, engagement, and service.
-            Join us today and start making an impact!
-        </p>
+    <main class="container">
+        <h1><i class="fa-solid fa-cloud"></i>Welcome to INFT 2202</h1>
+        <button id="aboutUsBtn" class="btn btn-primary">About Us</button>
 
-        <div class="text-center my-5">
-            <button type="button" class="btn btn-primary fs-4" id="getInvolvedButton">Get Involved!</button>
-        </div>
-
-        <div id="carousel" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/img1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/img3.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <div class="links text-center my-5 fs-6">
-            <a href="/opportunities.html">Explore Opportunities</a>
-            |
-            <a href="/events.html">Upcoming Events</a>
-            |
-            <a href="/contact.html">Contact Us</a>
+        <div id="weather" class="mt-5">
+            <h3>Weather Forecast</h3>
+            <p id="weatherData">Fetching weather data . . .</p>
         </div>
     </main>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="js/main.js" defer></script>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Scripts/app.js" defer></script>
 </body>
 </html>
