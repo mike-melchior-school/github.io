@@ -115,7 +115,7 @@
         const contactNumber = document.getElementById('contactNumber').value;
         const emailAddress = document.getElementById('emailAddress').value;
 
-        AddContact(fullName, emailAddress, contactNumber);
+        AddContact(fullName, contactNumber, emailAddress);
 
         //redirection
         location.href = "contact-list.html";
