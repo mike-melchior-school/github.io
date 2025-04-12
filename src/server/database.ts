@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 import { MongoClient, Db } from "mongodb";
 import dotenv from "dotenv";
 
